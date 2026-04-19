@@ -382,16 +382,22 @@ a {
 
 .mobile-menu-contacts-link {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
-
-  line-height: 1.2;
+  line-height: 1.5;
   letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.mobile-menu-contacts-link.phone {
+  font-size: 20px;
+  line-height: 1.2;
   color: #4d5ae5;
 }
+
 .mobile-menu-contacts-link:focus,
 .mobile-menu-contacts-link:hover {
-  color: #4d5ae5;
+  color: #404bbf;
 }
 
 /*mobile menu*/
@@ -542,6 +548,7 @@ a {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -554,6 +561,10 @@ a {
 
   .feature-item {
     flex-basis: calc((100% - 2 * 24px) / 2);
+  }
+
+  .features-title {
+    text-align: left;
   }
 }
 
