@@ -48,13 +48,21 @@
             </li>
           </ul>
         </address>
+
+        <button class="burger-button" type="button" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main class="page-main">
       <section class="hero">
         <div class="container hero-container">
           <h1 class="page-title">Effective Solutions for Your Business</h1>
-          <button class="hero-button" type="button">Order Service</button>
+          <button class="hero-button" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <section class="features section">
@@ -118,7 +126,8 @@
           <ul class="team-list">
             <li class="team-item">
               <img
-                src="./images/img-3-1.jpg"
+                src="./images/img-3-team-1x.jpg"
+                srcset="./images/img-3-team-1x.jpg 1x, ./images/img-3-1.jpg 2x"
                 alt="Photo of Mark Guerrero"
                 width="264"
                 height="260"
@@ -162,7 +171,8 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/img-2-1.jpg"
+                src="./images/img-2-team-1x.jpg"
+                srcset="./images/img-2-team-1x.jpg 1x, ./images/img-2-1.jpg 2x"
                 alt="Photo of Tom Ford"
                 width="264"
                 height="260"
@@ -206,7 +216,8 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/img-1-1.jpg"
+                src="./images/img-1-team-1x.jpg"
+                srcset="./images/img-1-team-1x.jpg 1x, ./images/img-1-1.jpg 2x"
                 alt="Photo of Camila Garcia"
                 width="264"
                 height="260"
@@ -250,7 +261,8 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/img-1.jpg"
+                src="./images/img-team-1x.jpg"
+                srcset="./images/img-team-1x.jpg 1x, ./images/img-1.jpg 2x"
                 alt="Photo of Daniel Wilson"
                 width="264"
                 height="260"
@@ -302,7 +314,11 @@
             <li class="portfolio-item">
               <div class="portfolio-card">
                 <img
-                  src="./images/img-5-2.jpg"
+                  src="./images/img-5-port-1x.jpg"
+                  srcset="
+                    ./images/img-5-port-1x.jpg 1x,
+                    ./images/img-5-2.jpg       2x
+                  "
                   alt="Photo of the project 'Banking App'"
                   width="360"
                   height="300"
@@ -321,7 +337,11 @@
             <li class="portfolio-item">
               <div class="portfolio-card">
                 <img
-                  src="./images/img-4-2.jpg"
+                  src="./images/img-4-port-1x.jpg"
+                  srcset="
+                    ./images/img-4-port-1x.jpg 1x,
+                    ./images/img-4-2.jpg       2x
+                  "
                   alt="Photo of the project 'Cashless Payment'"
                   width="360"
                   height="300"
@@ -339,7 +359,11 @@
             <li class="portfolio-item">
               <div class="portfolio-card">
                 <img
-                  src="./images/img-3-2.jpg"
+                  src="./images/img-3-port-1x.jpg"
+                  srcset="
+                    ./images/img-3-port-1x.jpg 1x,
+                    ./images/img-3-2.jpg       2x
+                  "
                   alt="Photo of the project 'Meditation App'"
                   width="360"
                   height="300"
@@ -357,7 +381,11 @@
             <li class="portfolio-item">
               <div class="portfolio-card">
                 <img
-                  src="./images/img-2-2.jpg"
+                  src="./images/img-2-port-1x.jpg"
+                  srcset="
+                    ./images/img-2-port-1x.jpg 1x,
+                    ./images/img-2-2.jpg       2x
+                  "
                   alt="Photo of the project 'Taxi Service'"
                   width="360"
                   height="300"
@@ -375,7 +403,11 @@
             <li class="portfolio-item">
               <div class="portfolio-card">
                 <img
-                  src="./images/img-1-2.jpg"
+                  src="./images/img-1-port-1x.jpg"
+                  srcset="
+                    ./images/img-1-port-1x.jpg 1x,
+                    ./images/img-1-2.jpg       2x
+                  "
                   alt="Photo of the project 'Screen Illustrations'"
                   width="360"
                   height="300"
@@ -393,7 +425,8 @@
             <li class="portfolio-item">
               <div class="portfolio-card">
                 <img
-                  src="./images/img-2.jpg"
+                  src="./images/img-port-1x.jpg"
+                  srcset="./images/img-port-1x.jpg 1x, ./images/img-2.jpg 2x"
                   alt="Photo of the project 'Online Courses'"
                   width="360"
                   height="300"
@@ -480,11 +513,88 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="mobile-menu" data-menu>
+      <div class="container mobile-menu-container">
+        <button class="mobile-menu-close" type="button" data-menu-close>
+          <svg class="close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu-nav">
+          <ul class="mobile-menu-links">
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link current" href="./index.html">Studio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="">Portfolio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="mobile-menu-contacts">
+          <ul class="mobile-menu-contacts-list">
+            <li class="mobile-menu-contacts-item">
+              <a
+                class="mobile-menu-contacts-link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="mobile-menu-contacts-item">
+              <a
+                class="mobile-menu-contacts-link phone"
+                href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+        <div class="mobile-social-media">
+          <ul class="mobile-social-list">
+            <li class="mobile-social-item">
+              <a class="mobile-social-link" href="">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a class="mobile-social-link" href="">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a class="mobile-social-link" href="">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a class="mobile-social-link" href="">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <div class="modal-content">
           <div class="close-item">
-            <button class="modal-close" type="button" aria-label="Close modal">
+            <button
+              class="modal-close"
+              type="button"
+              aria-label="Close modal"
+              data-modal-close
+            >
               <svg class="close-icon" width="8" height="8">
                 <use href="./images/icons.svg#icon-close"></use>
               </svg>
@@ -592,5 +702,7 @@
         </div>
       </div>
     </div>
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

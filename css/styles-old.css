@@ -1,0 +1,12 @@
+.modal {
+  width: 408px;
+  min-height: 584px;
+}
+
+.modal-content {
+  padding: 24px;
+}
+
+.modal-input {
+  width: 360px;
+}
