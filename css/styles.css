@@ -382,16 +382,14 @@ a {
 
 .mobile-menu-contacts-link {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 20px;
   font-style: normal;
-  line-height: 1.5;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   color: #434455;
 }
 
 .mobile-menu-contacts-link.phone {
-  font-size: 20px;
-  line-height: 1.2;
   color: #4d5ae5;
 }
 
